@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/style.css">
+<body>
+  <div id="third"></div>
+  <button id="toggle">strobe aan  </button>
+
+  <script>
+    const targetDiv = document.getElementById("third");
+    const btn = document.getElementById("toggle");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+        document.body.style.backgroundColor = "black";
+      } else {
+        targetDiv.style.display = "block";
+        document.body.style.backgroundColor = "black";
+      }
+    };
+  </script>
+
+</body>
